@@ -1,0 +1,11 @@
+.box-container {
+    width: 70%;
+}
+.left {
+    padding: 4rem 0rem 5rem 10rem;
+    width: 50%;
+}
+.right {
+    padding: 8rem 10rem;
+    width: 50%;
+}

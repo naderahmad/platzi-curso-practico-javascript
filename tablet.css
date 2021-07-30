@@ -1,0 +1,9 @@
+.box-container {
+    width: 90%;
+}
+.left {
+    padding: 4rem 0rem 5rem 6rem;
+}
+.right {
+    padding: 4rem 6rem 5rem 6rem;
+}
