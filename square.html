@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo geometric tool" class="logo__icon">
+            <h1 class="logo__title">Geometric Tool</h1>
+        </div>
+    </header>
+    <div class="background">
+        <div class="blur blur--purple"></div>
+        <div class="blur blur--purple-2"></div>
+        <div class="blur blur--purple-3"></div>
+        <div class="blur blur--purple-4"></div>
+        <div class="blur blur--blue"></div>
+        <div class="blur blur--blue-2"></div>
+        <div class="blur blur--blue-3"></div>
+    </div>
+    <main class="main">
+        <section class="content">
+            <div class="box-container">
+                <div class="box-container__header">
+                    <div class="triangle">
+                        <a href="./index.html" class="link">
+                            <div class="purple__bg">
+                                <img src="./assets/images/bleach.png" alt="" class="triangle__icon">
+                            </div>
+                            <p class="inactive__title">Triangulo</p>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./circles.html" class="link">
+                            <div class="purple__bg">
+                                <img src="./assets/images/circle.png" alt="" class="circle__icon">
+                            </div>
+                            <p class="inactive__title">Circulo</p>
+                        </a>
+                    </div>
+                    <div class="square">
+                        <a href="./square.html" class="link">
+                            <div class="blue__bg">
+                                <img src="./assets/images/box.png" alt="" class="square__icon">
+                            </div>
+                            <p class="active__title">Cuadrado</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div class="left left-circle">
+                        <h2 class="box-content__title box-content__title-circle">¡Vamos a calcular un Cuadrado!</h2>
+                        <p class="box-content__text">Ingresa la medida de los lados del cuadrado y presiona el boton “calcular” para obtener el area y el perimetro.</p>
+                        <form id="form" class="form flex">
+                            <div class="input-1">
+                                <label for="inputLados" class="label">Lados</label>
+                                <div class="units">
+                                    <input id="inputLados" type="number" class="input-data" placeholder="Ingresa los lados">
+                                    <span class="input-1__span">cm</span>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn" type="button" onclick="calcularCuadrado()">Calcular</button>
+                    </div>
+                    <div class="right right-circle">
+                        <img src="./assets/images/square.svg" alt="" class="shape">
+                        <div class="results results-circle">
+                            <div class="results__frame">
+                                <img class="results__img img-circle" src="./assets/images/form.svg" alt="">
+                                <button id="undo" class="undoBtn undoBtn-circle" onclick="restablecer()">
+                                    <img class="undo" src="./assets/images/undo.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="results__content results__content-circle">
+                                <div class="results-container">
+                                    <p class="results__span">Area:</p>
+                                    <p class="results__text" id="aResult"> 0 cm</p>
+                                </div>
+                                <div class="results-container">
+                                    <p class="results__span">Perimetro:</p>
+                                    <p class="results__text" id="pResult">0 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="footer">Desarrollado con 💚 por Nader Ahmad para Platzi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
